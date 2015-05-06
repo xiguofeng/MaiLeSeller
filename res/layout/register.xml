@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEFF" >
+
+    <RelativeLayout
+        android:id="@+id/reg_head_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/title_bg_repeat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reg_head_rl"
+        android:background="#EEEEFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/reg_account_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ro_head_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+
+                <EditText
+                    android:id="@+id/reg_username_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@anim/edit_text"
+                    android:inputType="text"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:paddingBottom="6.0dip"
+                    android:paddingLeft="50.0dip"
+                    android:paddingRight="0dip"
+                    android:paddingTop="6.0dip"
+                    android:textColor="#ff333333"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="0dip"
+                    android:text="@string/loginName"
+                    android:textColor="#ff333333"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+
+                <EditText
+                    android:id="@+id/reg_password_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@anim/edit_text"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:paddingBottom="6.0dip"
+                    android:paddingLeft="50.0dip"
+                    android:paddingRight="0dip"
+                    android:paddingTop="6.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="0dip"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+
+                <EditText
+                    android:id="@+id/reg_confirm_password_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@anim/edit_text"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:paddingBottom="6.0dip"
+                    android:paddingLeft="50.0dip"
+                    android:paddingRight="0dip"
+                    android:paddingTop="6.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="0dip"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reg_email_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+
+                <EditText
+                    android:id="@+id/reg_email_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@anim/edit_text"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:paddingBottom="6.0dip"
+                    android:paddingLeft="50.0dip"
+                    android:paddingRight="0dip"
+                    android:paddingTop="6.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="0dip"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reg_phone_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+
+                <EditText
+                    android:id="@+id/reg_phone_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@anim/edit_text"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:paddingBottom="6.0dip"
+                    android:paddingLeft="50.0dip"
+                    android:paddingRight="0dip"
+                    android:paddingTop="6.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="0dip"
+                    android:text="@string/mobile_no"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/regInputView"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_email_rl"
+                android:layout_gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/register_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dip"
+                    android:padding="1.0dip" >
+
+                    <Button
+                        android:id="@+id/btn_regform_regnewuser"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/btn_common_selector"
+                        android:gravity="center"
+                        android:text="注册"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

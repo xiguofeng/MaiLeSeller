@@ -1,0 +1,6 @@
+D:\workspace\MaiLeSeller\build\intermediates\classes\debug
+D:\workspace\MaiLeSeller\build\intermediates\pre-dexed\debug\locSDK_5.1-84d21eca14a95d7f7fa881762901732d0c22a10d.jar
+D:\workspace\MaiLeSeller\build\intermediates\pre-dexed\debug\jackson-core-lgpl-1.8.1-a79c273e0c5a5b9e143bca3e15a0e28c31bc97e6.jar
+D:\workspace\MaiLeSeller\build\intermediates\pre-dexed\debug\jackson-mapper-lgpl-1.8.1-1b40d42f1f68d92eb4d710396470695338a51d50.jar
+D:\workspace\MaiLeSeller\build\intermediates\pre-dexed\debug\android-support-v4-6df3fb02276a687870e6c61b7637923d23c1f4d7.jar
+D:\workspace\MaiLeSeller\build\intermediates\pre-dexed\debug\netty-all-4.1.0.Beta3-60b2cd1fc7489b5d84b2f1db2e96974428eeea53.jar
