@@ -65,7 +65,8 @@ public class SettingCategroyActivity extends Activity implements
 					if (mTempCategroyList.size() > 0) {
 						ArrayList<Categroy> categroyList = new ArrayList<Categroy>();
 						categroyList.addAll(mTempCategroyList);
-						mCategroyListHistory.put(mNowLevel, categroyList);
+
+                        mCategroyListHistory.put(mNowLevel, categroyList);
 						mNowLevel++;
 						mCategroyList.clear();
 						mCategroyList.addAll(mTempCategroyList);
@@ -144,13 +145,13 @@ public class SettingCategroyActivity extends Activity implements
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				// TODO
-				// if (mCategroyList.size() > 0) {
-				// mCustomProgressDialog = new CustomProgressDialog(mContext);
-				// mCustomProgressDialog.show();
-				// GoodsLogic.getCategroyList(mContext, mHandler,
-				// mCategroyList.get(position).getCategoryID());
-				// }
+//				TODO
+//				if (mCategroyList.size() > 0) {
+//				mCustomProgressDialog = new CustomProgressDialog(mContext);
+//				mCustomProgressDialog.show();
+//				GoodsLogic.getCategroyList(mContext, mHandler,
+//				mCategroyList.get(position).getCategoryID());
+//				}
 			}
 		});
 		mCustomProgressDialog = new CustomProgressDialog(mContext);
