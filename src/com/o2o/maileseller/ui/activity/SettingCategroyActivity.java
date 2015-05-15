@@ -176,7 +176,9 @@ public class SettingCategroyActivity extends Activity implements
 			break;
 		}
 		case R.id.setcate_cancel_btn: {
-
+			SettingCategroyActivity.this.finish();
+			overridePendingTransition(R.anim.push_right_in,
+					R.anim.push_right_out);
 			break;
 		}
 		default:
