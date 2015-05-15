@@ -98,12 +98,13 @@ public class PushService extends Service {
 	public void onCreate() {
 		super.onCreate();
 		mContext = this;
-		//initNotify();
+		// initNotify();
 		ConnectLogic.connect(mContext, mHandler);
 	}
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
+		flags = START_STICKY;
 		return super.onStartCommand(intent, flags, startId);
 	}
 
