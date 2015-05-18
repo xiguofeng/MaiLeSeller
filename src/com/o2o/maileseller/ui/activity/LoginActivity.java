@@ -211,8 +211,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 	}
 
 	private void login() {
-		mCustomProgressDialog = new CustomProgressDialog(this);
-		mCustomProgressDialog.show();
+		
 		// 获取用户的登录信息，连接服务器，获取登录状态
 		mUserName = mUserNameEt.getText().toString().trim();
 		mPassWord = mPassWordEt.getText().toString().trim();
@@ -223,6 +222,8 @@ public class LoginActivity extends Activity implements OnClickListener {
 					mContext.getString(R.string.login_emptyname_or_emptypwd),
 					Toast.LENGTH_SHORT).show();
 		} else {
+			mCustomProgressDialog = new CustomProgressDialog(this);
+			mCustomProgressDialog.show();
 			mUser.setUsername(mUserName);
 			mUser.setPassword(mPassWord);
 			// LoginLogic.login(LoginActivity.this, "xkm", "sss");
