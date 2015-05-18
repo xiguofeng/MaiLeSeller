@@ -26,12 +26,14 @@ public class ConnectLogic {
 
 	public static final int CONNECT_EXCEPTION = CONNECT_FAIL + 1;
 
-	public static void connect(final Context context, final Handler handler) {
+	public static void connect(final Context context, final Handler handler,
+			final int version) {
 
 		String url = RequestUrl.HOST_URL + RequestUrl.connect.connect;
 		JSONObject requestJson = new JSONObject();
 		try {
-			requestJson.put("clientVersion", 1);
+			requestJson.put("clientVersion", version);
+			requestJson.put("userType", "seller");
 			BaseApplication.getInstanceRequestQueue().add(
 					new JsonObjectRequest(Method.POST, url, requestJson,
 							new Listener<JSONObject>() {
