@@ -8,6 +8,7 @@ import android.content.res.Configuration;
 import com.o2o.maileseller.network.volley.RequestQueue;
 import com.o2o.maileseller.network.volley.toolbox.Volley;
 import com.o2o.maileseller.service.PushService;
+import com.o2o.maileseller.util.file.FileUtil;
 
 public class BaseApplication extends Application {
 
@@ -25,6 +26,7 @@ public class BaseApplication extends Application {
 		super.onCreate();
 		context = getApplicationContext();
 		sQueue = Volley.newRequestQueue(getApplicationContext());
+		FileUtil.createLogDir();
 		startPushService();
 		// startNotifyService();
 		// 自动恢复连接服务
