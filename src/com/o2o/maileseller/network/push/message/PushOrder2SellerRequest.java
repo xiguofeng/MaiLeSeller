@@ -35,6 +35,8 @@ public class PushOrder2SellerRequest {
 	String buyerPhone;
 
 	String buyerName;
+	
+	String goodsPrice;
 
 	public String getOrderID() {
 		return orderID;
@@ -98,6 +100,14 @@ public class PushOrder2SellerRequest {
 
 	public void setBuyerName(String buyerName) {
 		this.buyerName = buyerName;
+	}
+	
+	public String getGoodsPrice() {
+		return goodsPrice;
+	}
+
+	public void setGoodsPrice(String goodsPrice) {
+		this.goodsPrice = goodsPrice;
 	}
 
 }
